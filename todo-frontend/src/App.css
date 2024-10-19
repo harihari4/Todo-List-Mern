@@ -1,0 +1,102 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #81c4cb;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.todo-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(36, 32, 32);
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.input-listitems{
+  color: white;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #fb0707;
+}
+
+li input[type="text"] {
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  width: 80%;
+}
+
+li input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #aaa;
+}
+
+li input[type="checkbox"] {
+  cursor: pointer;
+}
+
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
